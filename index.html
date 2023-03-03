@@ -1,67 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="css/v2.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <link rel="prefetch" href="https://short.elmnts.co/html/2zvizxd">
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>        <script src="js/sparklehover.js"></script>
-        <script src="js/animatetitle.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <meta content="crip walkin' on your internet presence" property="og:description">
-</head>
-
-<body>
-    
-      <div id="container"></div>
-    <div class="btn-container">
-        <button id="overlay-start" onclick="overlay();">click me</button>
-    </div>
-    <div class="wrapper" id="wrapper">
-        <div class="transbox">
-            <div class="centered">
-                <a href='mailto:f@abuse.cx' target="_blank">mail</a><br>
-                <a href="https://t.me/tyvel" target="_blank">telegram</a><br>
-                <a href='https://yxh.pages.dev/' target="_blank">discord profile</a><br>
-            </div> 
-        </div>
-<audio id="audio" muted paused style="display:none;" controls loop>
-  <source id="audioSource" src="" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-        <video loop muted="muted" id="bgvid">
-            <source id="bgSource" src="" type="video/mp4">
-        </video>
-        <script>
-            let videos = ['1.mp4', '2.mp4', '3.mp4', '4.mp4', '5.mp4', '6.mp4'];
-            let randomVideo = videos[Math.floor(Math.random()*videos.length)];
-            document.getElementById("bgSource").src = "media/" + randomVideo;
-
-let sounds = ['lol1.m4a', 'lol2.m4a', 'lol3.m4a', 'lol4.m4a', 'lol5.m4a', 'lol6.m4a', 'lol7.m4a', 'lol8.m4a', 'lol9.m4a', 'lol10.m4a'];
-let randomSound = sounds[Math.floor(Math.random()*sounds.length)];
-document.getElementById("audioSource").src = "media/" + randomSound;
-document.getElementById("audio").load();
-document.getElementById("audio").play();
-
-            document.addEventListener('contextmenu', function(event) {
-                event.preventDefault();
-            });
-
-            document.onkeydown = function(event) {
-                if (event.ctrlKey && (event.keyCode === 83 || event.keyCode === 115)) {
-                    event.preventDefault();
-                }
-            };
-
-// Blur the screen when the site is not focused
-window.addEventListener('blur', function() {
-    document.querySelector('.wrapper').classList.add('blur');
-});
-
-// Remove the blur effect when the site is focused
-window.addEventListener('focus', function() {
-    document.querySelector('.wrapper').classList.remove('blur');
-});
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+<link rel="stylesheet" href="domain/assets/css/main.css">
+<link rel="stylesheet" href="domain/assets/css/bg.css">
+<link rel="stylesheet" href="domain/assets/css/meteor.css">
+<link rel="stylesheet" href="domain/assets/css/firefly.css">
+<script src="domain/assets/js/catgirl.js"></script>
+<link rel="icon" href="domain/assets/media/favicon.webp.html">
+<title id="title-name">zz</title>
+<meta id="meta-name" property="og:title" content="                    ♡">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://inture.xyz">
+<meta id="meta-image" property="og:image" content="https://yxh.pages.com/domain/assets/assets/loader.gif">
+<meta content="inture.xyz" property='og:site_name'>
+<meta name="theme-color" content="#2f3136">
+<style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: roboto, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                height: 100%;   
+                overflow-x: hidden;
+                overflow-y: hidden;
+                background: radial-gradient(ellipse at bottom, #3f3f3f  0%, #090A0F 100%); 
+                background-image: url(domain/assets/media/realbg.gif);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                min-height: 100vh;
+                gap: 30px;
                 
-        </script>
-    </div>
+            }
+            @media(max-width:730px) {
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: roboto, sans-serif;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    height: 100%;   
+                    overflow-x: hidden;
+                    background: radial-gradient(ellipse at bottom, #301934   0%, #090A0F 100%);
+                    background-image: url(domain/assets/media/realbg.gif);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    zoom: 80%;
+                }
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    min-height: 100vh;
+                    gap: 30px;
+                    
+                }
+            }
+        </style>
+</head>
+<body>
+<div class="bg-animation">
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<div id="stars4"></div>
+</div>
+<div class="wrapper">
+<script>invoke("617835811232022571", "card")</script>
+<div class="card">
+<div id="card-title" style="color: #fff;" class="card-title"></div>
+<div id="card-user-profile" style="color: #fff;" class="user-profile">
+<div class="Profile-pic">
+<img title="u niggaas retarded" class="card-pfp" id="pfp" src="https://reported.cf/assets/loader.gif" alt="">
+<div class="card-activity-dot" style="color: #fff;" id="activity-dot" aria-label="Unknown"></div>
+</div>
+<div class="user-info">
+<div class="card-username" style="color: #fff;" id="username"></div>
+<div class="card-status" style="color: #fff;" id="status"></div>
+<div class="card-status2" style="color: #fff;" id="status2"></div>
+<div class="connections">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
+</html>
