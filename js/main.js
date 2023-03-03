@@ -1,1 +1,0 @@
-function overlay(){var e=document.getElementById("overlay-start"),t=document.getElementById("wrapper");e.style.opacity=0,t.style.cssText="visibility: visible;",mediaPlay()}function mediaPlay(){var e=document.getElementById("audio"),t=document.getElementById("bgvid");e.muted=!e.muted,e.volume=1,e.play(),t.play()}
